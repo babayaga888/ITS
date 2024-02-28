@@ -23,7 +23,7 @@ The Simple Intelligent Tutoring System for E-Learning is a web-based application
 
 ## Code Structure
 
-The codebase for this ITS is structured using basic HTML, CSS, and JavaScript. The simplicity of the code makes it accessible for further customization and enhancements sadly I have created 
+The codebase for this ITS is structured using basic HTML, CSS, PHP, and JavaScript. The simplicity of the code makes it accessible for further customization and enhancements sadly I have created 
 this when i was starting my first web development so i did not know anything about bootstrap or responsiveness I manually created the code for its responsiveness.
 
 ## Contributing
