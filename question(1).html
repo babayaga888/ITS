@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-Bigbang</title>
+    <link rel="stylesheet" href="css/quiz1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+</head>
+<body>
+    <section class="wrapper">
+      
+        <nav>
+            <img src="images/rick.png" class="logo-img" >
+            <ul>
+                <li>
+                    <a href="pick_page.html">Home</a>     
+                </li>
+            </ul>
+            <div class="score">
+                
+                <h1>0</h1>
+
+            </div>
+           
+            <div class="hint">
+                
+                <button id="button" class="hint-button"><img type="image" src="images/hint-icon.png" alt="Hint" class="hint-image" onclick="limit()"></button>
+                
+             </div>
+          
+           
+        </nav>
+      
+        
+    </section>
+    <div >
+        <div id="hintText" class="hint-text" onclick="setTimeout(time,2000)">
+            <h1> Reviewer</h1>
+            <p class="review">The universe expanded <span class="idea">13,700 million years</span> ago and during that expansion from <span class="idea"> single</span> matter the two <span class="idea"> epochs</span> were forces annihilated each other, 
+                created everything that we <span class="idea"> see and experience </span>, from that expansion created the four forces of nature <span class="idea"> atomic forces and lorentz force</span>.</p>
+        
+        </div>
+    </div>
+   
+   <div id="hud">
+        <form class="container" onclick="setTimeout(time, 2000)" method="post">
+            <div id="question1">
+                Question here
+            </div>
+            <div class="answer-container">
+                <p class="prefix">A.</p>
+                <p class="question-choices" data-number="1"> choiceA </p>
+            </div>
+            <div class="answer-container">
+                <p class="prefix">B.</p>
+                <p class="question-choices"data-number="2"> choiceB </p>
+            </div>
+            <div class="answer-container">
+                <p class="prefix">C.</p>
+                <p class="question-choices"data-number="3"> choiceB </p>
+            </div>
+           
+        </form>
+        
+   </div> 
+   <script src="js/quiz.js"></script>
+   <script src="js/hint.js"></script>
+  
+</body>
+</html>

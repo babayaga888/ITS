@@ -1,0 +1,229 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin:0%;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: -webkit-linear-gradient(to left, #159957, #155799);
+    background: linear-gradient(to left, #159957, #155799);
+    color: #dcf1f9;
+    overflow: none;
+  }
+  
+  
+  nav{
+    display: flex;
+      padding: 20px 2%;
+      align-items: center;
+  }
+  nav ul {
+    float: left;
+  }
+  
+  
+  nav ul li {
+   float: left;
+    position: relative;
+    list-style: none;
+  }
+  
+  nav ul li a {
+    display: block;
+     font-family: Arial ;
+     color: rgb(255, 255, 255);
+     padding: 22px 14px;
+     font-size:20px;
+     text-decoration: none;
+  
+  }
+  nav ul li ul {
+   display: none;
+   position: absolute;
+   top: 40px;
+   padding: none;
+   width: 110px;
+   background-color: transparent;
+   border-radius: 0px 0px 4px 4px;
+  }
+   nav ul li:hover ul {
+    display: block;
+  
+   }
+   nav ul li ul li a {
+      padding: 12px 14px;
+  
+   }
+  nav ul li ul li a:hover {
+     background-color: none;
+     width: 100px;
+   }
+  
+   nav ul li ul li {
+    width: 180px;
+    border-radius: 4px;
+   }
+  
+  
+  nav .logo-img{
+    width: 200px;
+    margin-top: 10px;
+  }
+  
+  
+  #space, .stars {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .stars {
+    background-image: 
+      radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+      radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+    background-repeat: repeat;
+    background-size: 200px 200px;
+    animation: zoom 5s infinite;
+    opacity: 0;
+  }
+  
+  .stars:nth-child(1) {
+    background-position: 50% 50%;
+    animation-delay: 0s;
+  }
+  .stars:nth-child(2) {
+    background-position: 20% 60%;
+    animation-delay: 1s;
+  }
+  .stars:nth-child(3) {
+    background-position: -20% -30%;
+    animation-delay: 2s;
+  }
+  .stars:nth-child(4) {
+    background-position: 40% -80%;
+    animation-delay: 3s;
+  }
+  .stars:nth-child(5) {
+    background-position: -20% 30%;
+    animation-delay: 4s;
+  }
+  
+  @keyframes zoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+      animation-timing-function: ease-in;
+    } 
+    85% {
+      opacity: 1;
+      transform: scale(2.8);
+      animation-timing-function: linear;
+    }
+    100% {
+      opacity: 0;
+      transform: scale(3.5);
+    }
+  }
+  
+  .info-container{
+      font-size: 25px;
+      width: 950px;
+      height: 300px;
+      background: #2f3542;
+      margin: 20px;
+      padding: 30px;
+      margin-top: 300px;
+      left: 49%;
+      color: #fff;
+      border-radius: 15px;
+      position: relative;
+      transform: translate(-50%, -50%);
+      box-sizing: border-box;
+      box-shadow: 0 29px 38px rgba(0, 0, 0, 0.30), 0 25px 22px rgba(0, 0, 0, 0.22);
+      opacity: 0.9;
+  }
+
+  .title-info{
+    text-align: center;
+  }
+
+
+  .info{
+    display: flex;
+    line-height: 1.6;
+  }
+
+.text{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  word-spacing: normal;
+  letter-spacing: 1.5px;
+  text-indent: 50px;
+}
+
+.text2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  word-spacing: normal;
+  letter-spacing: 1.5px;
+  text-indent: 50px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .info-container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 10%;
+    left: 0;
+    transform: none;
+  }
+
+  .title-info, .info, .text, .text2, .btn {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    margin-top: 0;
+    left: 0;
+  }
+}
+
+
+
+.btn{
+    text-align: center;
+    font-size: 25px;
+    color: white;
+    height: 70px;
+    width: 200px;
+    margin-top: 150px;
+    cursor: pointer;
+    margin-left: 350px;
+    background-color: #2f3542;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    opacity: 5px;
+    transform: scale(1);
+    transform-origin: bottom;
+}
+
+.btn:hover{
+  color: lightblue;
+  transition: transform 150ms;
+  transform: scale(1.03);
+  text-shadow: 1px 1px 1px  lightgray;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blackhole Quiz</title>
+    <link rel="stylesheet" href="css/quiz1.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <section class="wrapper">
+      
+        <nav>
+            <img src="images/rick.png" class="logo-img" >
+            <ul>
+                <li>
+                    <a href="pick_page.html">Home</a>     
+                </li>
+            </ul>
+            <div class="score">
+                
+                <h1>0</h1>
+
+            </div>
+           
+            <div class="hint">
+                
+                <button id="button" class="hint-button"><img type="image" src="images/hint-icon.png" alt="Hint" class="hint-image" onclick="limit()"></button>
+                
+             </div>
+          
+           
+        </nav>
+      
+        
+    </section>
+
+    <div >
+        <div id="hintText" class="hint-text" onclick="setTimeout(time,2000)">
+            <h1> Reviewer</h1>
+            <p class="review1">Black holes are incredibly fascinating and mysterious objects in space. They are formed when a <span style="color:#349915">star</span> dies and collapses in on itself, creating a region of space where <span style="color:#349915">gravity</span> is so strong that nothing, not even light, can escape. This region is known as the <span style="color:#349915">event horizon</span>. Black holes come in different sizes, with the smallest being just a few times the mass of our sun, and the largest, called <span style="color:#349915">supermassive</span> black holes, weighing in at millions or billions of times the mass of our sun.
+
+                One of the most interesting aspects of black holes is their behavior around food. Black holes are <span style="color:#349915">messy eaters</span>, and when they feast on nearby matter, such as gas, dust, and other stars, they create a swirling disk of material around them known as an <span style="color:#349915">accretion disk</span>. This disk can emit intense radiation and even create bright <span style="color:#349915">quasars</span>, which are some of the brightest objects in the universe.
+                
+                But be warned: if you ever find yourself too close to a <span style="color:#349915">black hole</span>, the intense gravitational pull can stretch you out like spaghetti, a phenomenon known as <span style="color:#349915">spaghettification</span>. So while black holes may be fascinating to study, it's best to admire them from a safe distance.</p>
+        
+        </div>
+    </div>
+
+
+   
+   
+   <div id="hud">
+        <form class="container" onclick="setTimeout(time, 2000)" method="post">
+            <div id="question1">
+                Question here
+            </div>
+            <div class="answer-container">
+                <p class="prefix">A.</p>
+                <p class="question-choices" data-number="1"> choiceA </p>
+            </div>
+            <div class="answer-container">
+                <p class="prefix">B.</p>
+                <p class="question-choices"data-number="2"> choiceB </p>
+            </div>
+            <div class="answer-container">
+                <p class="prefix">C.</p>
+                <p class="question-choices"data-number="3"> choiceB </p>
+            </div>
+           
+        </form>
+        
+   </div> 
+   <script src="js/quiz(2).js"></script>
+   <script src="js/hint.js"></script>
+</body>
+</html>
